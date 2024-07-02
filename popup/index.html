@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Saver</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- NavBar/Header -->
+        <div class="navbar-section">
+            <img src="../images/icon.png" alt="Link Saver logo" id="logo">
+            <span id="navbar-title">Link Saver</span>
+        </div>
+
+        <!-- Link Buttons -->
+        <div class="task-section">
+            <button type="button" id="newLinkBtn" title="Save New Link"><i class="fa-solid fa-plus"></i><span id="btnText">Add</span></button>
+            <button type="button" id="exportBtn" title="Export to Excel"><i class="fa-solid fa-file-export"></i><span id="btnText">Excel</span></button>
+            <button type="button" id="deleteAllBtn" title="Delete All Links"><i class="fa-solid fa-trash"></i>All</button>
+        </div>
+
+        <!-- Add New Link Inputs -->
+        <div class="addNewLink">
+            <form name="New Link">
+                <div class="confirmInput">
+                    <button type="button" class="addBtn">Confirm</button>
+                    <button type="button" class="cancelBtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Links Display -->
+        <!-- Fetched using JavaScript -->
+        <div class="links-container"></div>
+
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+</body>
+</html>
